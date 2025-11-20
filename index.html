@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio and hobby showcase">
+    <meta name="keywords" content="portfolio, hobbies, student, professional">
+    <title>Academic Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Ensure cross-browser compatibility -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Portfolio</span>
+                </a>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="primary-navigation" class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="discovery.html">Discovery</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="career.html">Career Interests</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="profile-container">
+            <div class="profile-content">
+                <div class="headshot-container">
+                    <!-- Professional headshot -->
+                    <img src="Images/IMG_6354.jpg" alt="Connor McArdell headshot" class="headshot">
+                </div>
+                <div class="intro-content">
+                    <h1 class="typing-text">Hello I'm Connor Mcardell</h1>
+                    <h2 class="subtitle">University of Minnesota Duluth Student studying entrepreneurship</h2>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="introduction" class="introduction-section">
+        <div class="section-container">
+            <div class="professional-intro">
+                <h2>Professional Overview</h2>
+                <div class="intro-text">
+                    <p>
+                        My name is Connor McArdell and I am in the buisness school at the University of Minnesota Duluth. I Graduated Duluth East High School in 2025, while also taking many PSEO classes at UMD. I love learning about buisness as it has been one of my favorite interests growing up. I am drivin to learn and try new things!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="welcome-video" class="video-section">
+        <div class="section-container">
+            <h2>Welcome Message</h2>
+            <div class="video-container">
+                <!-- Replace with your actual video embed code -->
+                <div class="video-placeholder">
+                    <p>Your Welcome Video Here</p>
+                    <!-- Example video embed code: -->
+                    <!-- <video controls width="100%">
+                        <source src="your-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="skill-cards">
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Technical Skills</h3>
+                <p>Proficient in various programming languages and tools</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>Academic Focus</h3>
+                <p>Dedicated to continuous learning and research</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-users"></i>
+                <h3>Leadership</h3>
+                <p>Active participant in campus organizations</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="hobbies-section">
+        <h2>My Hobbies</h2>
+        <div class="hobby-container">
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <!-- Boy Scouts image -->
+                    <img src="Images/IMG_0978.jpeg" alt="Boy Scouts - Sea Base" class="hobby-img">
+                </div>
+                <div class="hobby-content">
+                    <h3>First Hobby</h3>
+                    <p>I have loved being in Boy Scouts as a kid. I got to do many things such as going to the Florida Keys for Sea Base and being the SPL for the National Jamboree. I also recieved my Eagle Scout. Being a Boy Scout gave me the confidence to be a true leader and friend.</p>
+                </div>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-image">
+                    <!-- Violin / Orchestra image -->
+                    <img src="Images/IMG_7545.JPEG" alt="Violin performance" class="hobby-img">
+                </div>
+                <div class="hobby-content">
+                    <h3>Second Hobby</h3>
+                    <p>All throughout Middle school and High School I played Violin in the Orchestra. I love music, it is very relaxing and just fun to do. My senior year I was in the stirling strings and played all of my music from memory while walking around.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Active navigation highlight
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

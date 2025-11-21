@@ -74,14 +74,17 @@
         <div class="section-container">
             <h2>Welcome Message</h2>
             <div class="video-container">
-                <!-- Replace with your actual video embed code -->
-                <div class="video-placeholder">
-                    <p>Your Welcome Video Here</p>
-                    <!-- Example video embed code: -->
-                    <!-- <video controls width="100%">
-                        <source src="your-video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video> -->
+                <!-- Welcome video: replace or upload your preferred file to Videos/IMG_4190.mp4 or Videos/IMG_4190.MOV -->
+                <div class="video-wrapper">
+                    <video controls preload="metadata" width="100%" class="welcome-video">
+                        <!-- Primary (recommended): MP4 for widest browser support -->
+                        <source src="Videos/IMG_4190.mp4" type="video/mp4">
+                        <!-- Fallback: QuickTime/MOV if you only have .MOV -->
+                        <source src="Videos/IMG_4190.MOV" type="video/quicktime">
+                        <!-- Last-resort fallback to an existing video if available -->
+                        <source src="Videos/welcom.MP4" type="video/mp4">
+                        Your browser does not support the video tag. Please upload `Videos/IMG_4190.mp4` or `Videos/IMG_4190.MOV` to the project.
+                    </video>
                 </div>
             </div>
         </div>

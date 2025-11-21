@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Connor McArdell — Resume" />
+  <title>Resume — Connor McArdell</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <div class="nav-container">
+        <a href="index.html" class="logo"><span class="logo-text">Portfolio</span></a>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="primary-navigation" class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="discovery.html">Discovery</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="career.html">Career Interests</a></li>
+          <li><a href="game.html">Game</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container" style="padding-top:5.5rem;">
+    <section class="card" aria-labelledby="resume-heading">
+      <h1 id="resume-heading">Connor McArdell</h1>
+      <p class="subtitle">Resume</p>
+
+      <div style="margin-top:1rem; display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="resume.pdf" download class="button">Download PDF (existing file)</a>
+        <a href="resume-print.html" target="_blank" class="button" id="print-resume">Open printable resume / Save as PDF</a>
+        <a href="#education" class="button">Education</a>
+        <a href="#work-history" class="button">Work History</a>
+      </div>
+
+      <hr style="margin:1.5rem 0;">
+
+      <section id="professional-summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Professional Summary</h2>
+        <p>
+          Motivated and goal-oriented business student currently attending the Labovitz School of Business at the University of Minnesota Duluth. Demonstrates strong leadership abilities developed through earning the rank of Eagle Scout, including project planning, team coordination, and problem solving. Excellent communication and teamwork skills developed through working in fast-paced, customer-facing roles such as the Minnesota State Fair. Eager to apply these strengths in a dynamic and productive way.
+        </p>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <p>First Aid and CPR • Problem Solving • Leadership • Adaptability • Communication</p>
+      </section>
+
+      <section id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <ul class="bullet-list">
+          <li><strong>University of Minnesota Duluth</strong> — currently 53 credits</li>
+          <li><strong>High School</strong> — 2025, Duluth East, Duluth, Minnesota</li>
+        </ul>
+      </section>
+
+      <section id="work-history" aria-labelledby="work-history-heading">
+        <h2 id="work-history-heading">Work History</h2>
+
+        <article class="experience-item">
+          <h3>Manager — July 2024 to present</h3>
+          <p class="meta"><strong>Silly Yak Concessions LLC</strong>, Duluth, MN</p>
+          <p>Manage the daily operations of a family-owned small bakery business.</p>
+        </article>
+
+        <article class="experience-item">
+          <h3>Ski Patroller — November 2021 to present</h3>
+          <p class="meta"><strong>Spirit Mountain Recreation Area</strong>, Duluth, MN</p>
+          <p>Responsible for first response to life-threatening injuries and incidents.</p>
+        </article>
+
+        <article class="experience-item">
+          <h3>Team Lead — August 2012 to present</h3>
+          <p class="meta"><strong>Peters Hot Dogs</strong>, Minnesota State Fair, St. Paul, MN</p>
+          <p>Responsible for training new hires in the food service business.</p>
+        </article>
+
+      </section>
+
+      <section id="accomplishments" aria-labelledby="accomplishments-heading">
+        <h2 id="accomplishments-heading">Accomplishments</h2>
+        <ul class="bullet-list">
+          <li>Eagle Scout</li>
+          <li>Outdoor Emergency Care technician</li>
+        </ul>
+      </section>
+
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>© 2025 — Connor McArdell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

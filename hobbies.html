@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my hobbies and personal interests">
+    <meta name="keywords" content="hobbies, interests, activities, personal">
+    <title>My Hobbies & Interests</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Portfolio</span>
+                </a>
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="primary-navigation" class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hobbies.html" class="active">Hobbies</a></li>
+                    <li><a href="discovery.html">Discovery</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="career.html">Career Interests</a></li>
+                    <li><a href="game.html">Game</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <header class="hobby-header">
+        <div class="header-content">
+            <h1>My Passions & Interests</h1>
+            <p>Discover the activities that shape who I am</p>
+        </div>
+    </header>
+
+    <section class="hobby-grid">
+        <div class="hobby-feature">
+            <div class="hobby-text">
+                <h2>Boy Scouts</h2>
+                <div class="hobby-description">
+                    <p class="hobby-intro">
+                        I first started Boy Scouts in Kindergarten as a Lion scout. I mostly did it because I knew a lot of friends in it and I also loved to go camping. Over the years I would grow to love the program even more and go on so many amaizing trips.
+                    </p>
+                    <div class="hobby-story">
+                        <h3>My Journey</h3>
+                        <p>My favorite adventure in Boy Scouts was the trip to the Florida Sea Base. It was a 9 day long trip but the adventure made it feel like a lifetime. I got to do many cool things from holding aligators to swimming with sharks.</p>
+                    </div>
+                    <div class="hobby-importance">
+                        <h3>Why It Matters</h3>
+                        <p>This matters to me because it taught me how to be a leader. It gave me the confidence to do many things I would not normally do in life.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hobby-gallery">
+                <div class="gallery-grid">
+                    <img src="Images/IMG_1915.jpeg" alt="Sea Base alligator" class="gallery-img">
+                    <img src="Images/IMG_0452.jpeg" alt="Sea Base campsite" class="gallery-img">
+                    <img src="Images/IMG_1077.jpeg" alt="Boy Scouts group" class="gallery-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="hobby-divider"></div>
+
+        <div class="hobby-feature">
+            <div class="hobby-text">
+                <h2>Orchestra</h2>
+                <div class="hobby-description">
+                    <p class="hobby-intro">
+                        I started Orchestra in the 6th grade. It was required to play a music class but I ended up loving to play the violin. I went on to play in Orchestra all throughout High School.
+                    </p>
+                    <div class="hobby-story">
+                        <h3>Memorable Experiences</h3>
+                        <p>My favorite memory was when I was in the Stirling Strings and we were going to play at St. Scholastica and the power went completely out. We decided to play our music from memory in the dark for the audiance and when we played our final song the lights turned on. It was an amazing performance.</p>
+                    </div>
+                    <div class="hobby-importance">
+                        <h3>Personal Growth</h3>
+                        <p>Orchestra helped me get out of my comfort zone. I have been an anxious person for a long time and having to play on stage infront of so many people made me feel amazing even though I was nervous. I also met friends that I still talk to today.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hobby-gallery">
+                <div class="gallery-grid">
+                    <img src="Images/IMG_2314.jpeg" alt="Orchestra image 1" class="gallery-img">
+                    <img src="Images/IMG_7525.jpeg" alt="Orchestra image 2" class="gallery-img">
+                    <img src="Images/IMG_3706.jpeg" alt="Orchestra image 3" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Image Gallery Interaction
+        document.querySelectorAll('.gallery-img').forEach(img => {
+            img.addEventListener('click', function() {
+                this.classList.toggle('gallery-img-expanded');
+            });
+        });
+    </script>
+</body>
+</html>
